@@ -3,7 +3,7 @@ test app crash for debugging
 
 1. download procdump from https://learn.microsoft.com/en-us/sysinternals/downloads/procdump
 2. unzip the files to where you'd like store the dump files, e.g. c:\dumps
-3. execute this command to set it as JIT debugger:
+3. start a command with Administrator, execute this command to set it as JIT debugger:
 
 C:\dumps>procdump -i c:\dumps -ma
 

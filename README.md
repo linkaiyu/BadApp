@@ -30,3 +30,13 @@ ProcDump is now set as the Just-in-time (AeDebug) debugger.
 5. to uninstall, type procdump -u
 6. Note: if leave uninstalled, ProcDump will keep capturing crash dumps to the folder whenever an app crashes on your machine. So keep monitoring your c:\dumps folder
 
+for testing native app crash on Mac, create a XCode C++ command app with this code:
+
+#include
+char dest[2];
+int main(int argc, const char * argv[]) {
+// insert code here...
+memcpy( dest, "badstruff", 190001000);
+std::cout << "Hello, World!\n";
+return 0;
+}
